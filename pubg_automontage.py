@@ -5,13 +5,13 @@ import glob
 from moviepy.editor import VideoFileClip, concatenate_videoclips
 import argparse
 
-def getSortedClipsFromDir(directory):
+def get_sorted_clipnames_from_dir(directory):
     clips = list(filter(os.path.isfile, glob.glob(directory + "*.mp4")))
     clips.sort(key=lambda x: os.path.getmtime(x))
     return clips
 
 def create_video(input_dir, output_dir):
-    clips = getSortedClipsFromDir(input_dir)
+    clips = get_sorted_clipnames_from_dir(input_dir)
     all_clips_in_dir = [None] * len(clips)
     for (i, clip) in enumerate(clips):
         print(clip)
