@@ -15,4 +15,8 @@ This repository also contains a dockerfile in case you don't want to system inst
 
 Or use my public dockerfile:
 
+`docker pull murtis/pubg_automontage`
+
+Run with:
+
 `docker run -it --rm -v ~/Desktop/vids:/usr/io murtis/pubg_automontage`
