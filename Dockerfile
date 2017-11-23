@@ -28,6 +28,6 @@ RUN pip3 install -r /usr/src/app/requirements.txt
 RUN rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /usr/io
-COPY ./py/pubg_automontage.py /usr/src/app
+COPY ./pubg_automontage/pubg_automontage.py /usr/src/app
 RUN chmod +x /usr/src/app/pubg_automontage.py
 CMD /usr/src/app/pubg_automontage.py
