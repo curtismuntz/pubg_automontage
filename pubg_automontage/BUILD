@@ -13,9 +13,9 @@ py_binary(
     main = "pubg_automontage.py",
 )
 
-
+#
 # py_image(
-#     name = "pubg_automontage_docker",
+#     name = "docker",
 #     srcs = ["pubg_automontage.py"],
 #     # layers = [
 #     #     requirement("setuptools"),
@@ -28,4 +28,12 @@ py_binary(
 #         requirement("numpy"),
 #     ],
 #     main = "pubg_automontage.py",
+# )
+#
+# container_image(
+#     name = "app",
+#     # References container_pull from WORKSPACE (above)
+#     base = "@ffmpeg_base//image",
+#     files = ["//java/com/example/app:Hello_deploy.jar"],
+#     cmd = ["Hello_deploy.jar"]
 # )
