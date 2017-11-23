@@ -14,18 +14,18 @@ py_binary(
 )
 
 
-py_image(
-    name = "pubg_automontage_docker",
-    srcs = ["pubg_automontage.py"],
-    # layers = [
-    #     requirement("setuptools"),
-    #     requirement("moviepy"),
-    #     requirement("numpy"),
-    # ],
-    deps = [
-        requirement("setuptools"),
-        requirement("moviepy"),
-        requirement("numpy"),
-    ],
-    main = "pubg_automontage.py",
-)
+# py_image(
+#     name = "pubg_automontage_docker",
+#     srcs = ["pubg_automontage.py"],
+#     # layers = [
+#     #     requirement("setuptools"),
+#     #     requirement("moviepy"),
+#     #     requirement("numpy"),
+#     # ],
+#     deps = [
+#         requirement("setuptools"),
+#         requirement("moviepy"),
+#         requirement("numpy"),
+#     ],
+#     main = "pubg_automontage.py",
+# )
